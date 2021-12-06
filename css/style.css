@@ -3,34 +3,27 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
-
 html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-
 .container {
     max-width: 1125px;
     width: 100%;
     margin: auto;
 }
-
 .block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .header {
     margin-top: 50px;
 }
-
 .link { 
     text-transform: uppercase;
     text-decoration: none;
 }
-
-
 .logo {
     font-family: 'Revalia', cursive;
     font-size: 48px;
@@ -38,40 +31,34 @@ html {
     color: #34547A;
     
 }
-.link:hover{
+.link:hover {
     color:#34547A;
 }
-.navigation{
+.navigation {
     max-width: 612px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.nav__item{
+.nav__item {
     line-height: 26px;
     letter-spacing: 0.1em;
     color: #000000;
-
 } 
-.section_hero{
+.section_hero {
     background: #EEEFF1;
     padding-top: 250px ;
     padding-bottom: 153px;
     margin-top: -110px;
-
 }
-.hero__img{
-  
+.hero__img {
   margin-left: 85px;
-
 }
-
-.hero__info{
+.hero__info {
     max-width: 541px;
     width: 100%;
 }
-
 .hero__title{
     font-weight: bold;
     font-size: 48px;
@@ -94,7 +81,30 @@ html {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
-    border:none;
+    border: 1px solid #34547A;
+    transition: all 500ms ease; 
+}
+.button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    border: 1px solid #34547A;
+
+}
+
+.button:hover {
+    color: #34547A;
+    background: white;
+    border: 1px solid #34547A;
+    transition: 500ms;
+}
+
+.button:hover:before {
+    top: 0;
+    height: 100%;
 }
 
 .button--primary{
