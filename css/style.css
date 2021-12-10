@@ -409,6 +409,12 @@ textarea{
     }
 }
 @media (max-width: 1140px) {
+    .div__me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .container {
         width: 95%;
     }
@@ -435,18 +441,34 @@ textarea{
     }
 }
 @media (max-width: 570px) {
+    .input {
+        width: 100%;
+    }
     .input-group{
         flex-direction: column;
     }
     .name__input{
         margin-bottom: 20px;
     }
-    .input--message {
+    /* .input--message {
         width: 95%;
-    }
+    } */
     
 }
 @media (max-width: 510px) {
+
+    .hero__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__title{
+        text-align: center;
+    }
+    .hero__desc {
+        text-align: center;
+    }
     .hero__img{
         display: none;
     }
